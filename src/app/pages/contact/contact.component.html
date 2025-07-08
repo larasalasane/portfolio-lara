@@ -1,0 +1,42 @@
+<section class="contact-section">
+  <div class="contact-card">
+    <h2 class="section-title">Contacto</h2>
+
+    <form action="https://formspree.io/f/manjgyqw" method="POST" [@fadeIn]="true">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nombre<span>*</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Teléfono<span>*</span></label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="ej: nombre@correo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com/larasalasane" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/larasalasane" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:larasalasane@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="form-thankyou" id="thankYouMessage">
+  <p>¡Gracias por tu mensaje! 💌 Me pondré en contacto pronto.</p>
+</div>
+
+</section>

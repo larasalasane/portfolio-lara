@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+  import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio-lara';
+  title = 'Lara Salas Ané';
+
+
+ngOnInit(): void {
+  AOS.init({ duration: 1000 });
+}
+
 }

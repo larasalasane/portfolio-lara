@@ -1,0 +1,13 @@
+<div class="project-card">
+  <h3>{{ title }}</h3>
+  <p>{{ description }}</p>
+
+  <div class="technologies">
+    <span class="tech-badge" *ngFor="let tech of technologies">{{ tech }}</span>
+  </div>
+
+  <div class="project-links">
+    <a *ngIf="githubLink" [href]="githubLink" target="_blank" class="btn-link">GitHub</a>
+    <a *ngIf="demoLink" [href]="demoLink" target="_blank" class="btn-link">Demo</a>
+  </div>
+</div>

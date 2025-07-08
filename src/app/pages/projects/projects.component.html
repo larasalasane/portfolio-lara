@@ -1,0 +1,13 @@
+<section class="projects-container">
+<h2 class="projects-title">Mis Proyectos Destacados</h2>
+<div class="cards-wrapper">
+  <app-project-card
+    *ngFor="let project of projects"
+    [title]="project.title"
+    [description]="project.description"
+    [technologies]="project.technologies"
+    [githubLink]="project.github"
+    [demoLink]="project.demo">
+  </app-project-card>
+</div>
+</section>
